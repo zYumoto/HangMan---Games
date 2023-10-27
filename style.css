@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 30px auto;
+    background-color: cyan;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px black solid;
+}
+
+.content{
+    max-width: 1280px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.Forca{
+    background-color: #3b3b3b;
+    height: 500px;
+    width: 30px;
+    position: relative;
+    border-radius: 15px 0 0 0;
+}
+ 
+.word{
+    max-width: 1180px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.letra{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+}
+
+.letra::after{
+    content: "";
+    background-color: #3b3b3b;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.Forca::after{
+    content: "";
+    background-color:#3b3b3b;
+    position: absolute;
+    height: 30px;
+    width: 280px;
+    border-radius: 15px;
+}
+
+.Forca::before{
+    content: "";
+    right: -250px;
+    background-color: #3b3b3b;
+    position: absolute;
+    width: 20px;
+    height: 70px;
+    border-radius: 0 15px 15px 15px;
+}
+
+
